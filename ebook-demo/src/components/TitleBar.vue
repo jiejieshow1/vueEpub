@@ -21,7 +21,7 @@
   <script>
   export default{
     props: {
-        iftTitleAndMenuShow: {
+        ifTitleAndMenuShow: {
             type: Boolean,
             default : false
         }
@@ -31,7 +31,7 @@
   </script>
   
   <style lang='scss' scoped>
-  @import '@/assets/styles/global';
+  @import '@/src/assets/styles/global';
   .title-wrapper {
     position: absolute;
     top: 0;
