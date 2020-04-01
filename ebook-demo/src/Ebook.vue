@@ -1,7 +1,7 @@
 <template>
   <div class="ebook">
-    <!-- 讲iftitleandmenushow这个变量传入 -->
-    <TitleBar : iftTitleAndMenuShow="ifTitleAndMenuShow"></TitleBar>
+    <!-- 将iftitleandmenushow这个变量传入 -->
+    <title-bar :ifTitleAndMenuShow="ifTitleAndMenuShow"></title-bar>
     <div class="read-wrapper">
       <div id="read"></div>
       <div class="mask">
@@ -10,7 +10,7 @@
         <div class="right" @click="nextPage"></div>
       </div>
     </div>
-    <MenuBar : iftTitleAndMenuShow="ifTitleAndMenuShow"></MenuBar>
+    <menu-bar :ifTitleAndMenuShow="ifTitleAndMenuShow"></menu-bar>
   </div>
 </template>
 
@@ -24,12 +24,12 @@ const DOWNLOAD_URL = "/static/zhaliezhi.epub";
 
 //添加eslint忽略检查报错
 /*eslint-disable space0before-function-paren */
-global.Epub = Epub;
+global.Epub = Epub
 export default {
   components:{
     TitleBar,
     MenuBar
-  }
+  },
   data() {
     return {
       ifTitleAndMenuShow: false
@@ -70,6 +70,7 @@ export default {
 </script>
 <style lang= 'scss' scoped>
 @import "assets/styles/global";
+
 .ebook {
   position: relative;
 
