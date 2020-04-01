@@ -118,7 +118,7 @@ export default {
         @include center;
       }
     }
-    /* 加上"&"符号告诉css某个对象是同级的 */
+    /* 加上"&"符号告诉css某个对象是同级的 */~
     &.slide-down-enter {
       transform: translate3d(0, -100%, 0)
     }
@@ -126,7 +126,7 @@ export default {
       transform: translate3d(0, 0, 0)
     }
     &.slide-down-enter-active {
-      transform: all .3s linear;
+      transition: all .3s linear;
     }
   }
   .read-wrapper {
