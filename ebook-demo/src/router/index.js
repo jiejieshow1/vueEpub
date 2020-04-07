@@ -8,6 +8,7 @@ export default new Router({
   routes: [
     {
       path: '/',
+      //重定向到ebook
       redirect: '/ebook'
     },
     {

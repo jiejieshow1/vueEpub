@@ -41,7 +41,7 @@ export default {
         height: px2rem(48);
         z-index: 101;
         background: white;
-        box-shadow: 0 px2rem(8) px2rem(8) rgba(0, 0, 0, 15);
+        box-shadow: 0 px2rem(8) px2rem(8) rgba(0, 0, 0, .15);
 
         .left {
             @include center;
@@ -58,4 +58,5 @@ export default {
                 @include center;
             }
         }
+    }
 </style>
